@@ -1,0 +1,19 @@
+﻿<Window x:Class="MQTTMesajlsama.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MQTTMesajlsama"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="text1" Grid.Row="0" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" />
+        <TextBox x:Name="text2" Grid.Row="1" />
+        <Button x:Name="gonderbuton" Grid.Row="1" Content="Gönder" HorizontalAlignment="Right" Click="gonderbuton_Click" />
+    </Grid>
+</Window>
